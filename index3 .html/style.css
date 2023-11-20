@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
+  .center ul li{
+    display: inline;
+    margin: 20px;
+  }
+  .center ul li a{
+    
+        text-align: center;
+        border: 3px solid green;
+      display: inline-flexbox;
+      
+  }
+  .continer{
+    width:100%;
+    height: 100vh;
+    background: #10aeda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .calculator{
+    background: #020f20;
+    padding:20px ;
+    border-radius: 10px;
+
+  }
+  .calculator form input{
+border: 0;
+outline: 0;
+width: 60px;
+height: 60px;
+border-radius: 10px;
+box-shadow: -8px -8px 15px rgba(255,255,255,0.1), -5px -5px 15px rgba(0,0,0,0.2);    
+background:transparent ;
+font-size: 20px;
+color: #fff;
+cursor: pointer;
+margin: 10px;
+  }
+form.display{
+
+  display: flex;
+justify-content: flex-end;
+margin: 20px 0;
+}
+form .display input{
+text-align: right;
+flex: 1;
+font-size: px;
+box-shadow: none;
+}
+form input.equal{
+  width: 145px;
+}
+ form input.operator{
+  color: #33ffd8;
+}
+.hero{
+  
+  width: 100;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  padding: 20px 0%;
+}
+.logo{
+  width:85%;
+  margin: auto;
+padding: 35px 0;
+display: flexa;
+align-items: center;
+justify-content:space-between;
+}
+.logo{
+  width: 170px;
+  cursor: pointer;
+}
+nav ul{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  display: inline;
+  list-style: none;
+  margin: 0 50px;
+  position: relative;
+}
+nav ul li a{
+  text-decoration: none;
+  color:rgb(207, 6, 22);
+  text-decoration: double;
+  font-weight: bold;
+}
+nav ul li ::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #ffc107;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li :hover::after{
+width: 100%
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #14ec5c;
+}
+.title{
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+.content p{
+  margin: 20px auto;
+  font-weight:100px;
+  line-height: 25px;
+  font-family: sans-serif;
+}
+button{
+  padding: 15px 25px;
+  margin: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 2px solid #ffc107;
+  color:#fff ;
+  cursor: pointer;
+  background: linear-gradient(to right ,transparent 50%, #ffc107 50%);
+  background-size: 200%;
+  background-position: left;
+}
+button:hover{
+  background-position: right;
+  color: #000;
+}
+.slider{
+color: #ffc107;
+margin: left;
+box-sizing: border-box;
+animation: slider 6s linear infinite;
+}
+@keyframes slider {
+  0%{ margin-top:  -200px;}
+  50%{ margin-top: -0px;}
+  100%{ margin-top: -200px;}
+}
+
+
+
+
